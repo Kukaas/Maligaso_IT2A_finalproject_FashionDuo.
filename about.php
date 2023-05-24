@@ -76,7 +76,7 @@ if(!isset($user_id)){
 
       <div class="box">
          <img src="images/pic2.png" alt="">
-         <p> I appreciate the detailed product descriptions, specifications, and customer reviews. The search functionality is allowing me to quickly find items. I've always had a positive experience on their website, and their fast shipping make them my top choice.</p>
+         <p> I appreciate the detailed product descriptions, specifications, and customer reviews. The search functionality is allowing me to quickly find items ferm the shop. I've always had a positive experience on their website, and their fast shipping make them my top choice to other ecommerce that I encounter.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -122,7 +122,7 @@ if(!isset($user_id)){
       </div>
 
       <div class="box">
-         <img src="images/author-2.jpg" alt="">
+         <img src="images/author2.jpg" alt="">
          <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>

@@ -66,7 +66,7 @@ if(!isset($admin_id)){
             };
          ?>
          <h3>Php<?php echo $total_completed; ?>/-</h3>
-         <p>Completed Payments</p>
+         <p>CompletedPayments</p>
       </div>
 
       <div class="box">
