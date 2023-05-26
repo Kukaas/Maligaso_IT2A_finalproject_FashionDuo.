@@ -70,7 +70,7 @@ if(isset($message)){
       <input type="password" name="cpassword" placeholder="Confirm password" required class="box">
       <select name="user_type" class="box">
          <option value="user">User</option>
-         <option value="admin">Admin</option>
+         <option value="user">User</option>
       </select>
       <input type="submit" name="submit" value="register now" class="btn">
       <p>Already have an account? <a href="login.php">Login Now</a></p>
