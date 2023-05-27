@@ -44,14 +44,16 @@ if(isset($_POST['add_to_cart'])){
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
 
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
 </head>
 <body>
    
 <?php include 'header.php'; ?>
 
-<header>
-   <h2><?php  ?></h2>
-</header>
+<div class="alert alert-success" id="result">
+  <strong id="header"></strong><p id="message"></p>
+</div>
 <section class="home">
 
    <div class="content">
@@ -134,5 +136,26 @@ if(isset($_POST['add_to_cart'])){
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
 
+<script>
+ var xhttp = new XMLHttpRequest();
+
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var xmlContent = this.responseText;
+
+        var parser = new DOMParser();
+
+        var xmlDoc = parser.parseFromString(xmlContent, 'text/xml');
+
+        var data = xmlDoc.getElementsByTagName('messages')[0].textContent;
+
+        document.getElementById('result').textContent = data;
+    }
+};
+
+
+xhttp.open('GET', 'Maligaso_IT2A_FashionDuo.xml', true);
+xhttp.send();
+</script>
 </body>
 </html>
